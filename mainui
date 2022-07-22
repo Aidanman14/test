@@ -1,0 +1,1358 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Test4 = Instance.new("ScreenGui")
+local MainGUI = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Line = Instance.new("Frame")
+local Line2 = Instance.new("Frame")
+local Line3 = Instance.new("Frame")
+local Users = Instance.new("ImageLabel")
+local Username = Instance.new("TextLabel")
+local FPS = Instance.new("TextLabel")
+local Amonut = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local FPS_2 = Instance.new("TextLabel")
+local FPS_3 = Instance.new("TextLabel")
+local Name = Instance.new("TextLabel")
+local Autofarmtab = Instance.new("ScrollingFrame")
+local Frame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Godmode = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Title_2 = Instance.new("TextLabel")
+local Name_2 = Instance.new("TextLabel")
+local Name_3 = Instance.new("TextLabel")
+local Line4 = Instance.new("Frame")
+local Autofarm = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Misc = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Player = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Visuals = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Settings = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Credits = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Playertab = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local Title_3 = Instance.new("TextLabel")
+local Title_4 = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local UICorner_13 = Instance.new("UICorner")
+local Title_5 = Instance.new("TextLabel")
+local TextBox_2 = Instance.new("TextBox")
+local UICorner_14 = Instance.new("UICorner")
+local Name_4 = Instance.new("TextLabel")
+local Visualstab = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local Title_6 = Instance.new("TextLabel")
+local Name_5 = Instance.new("TextLabel")
+local CheckBox = Instance.new("ImageButton")
+local UICorner_16 = Instance.new("UICorner")
+local CheckBox_2 = Instance.new("ImageButton")
+local UICorner_17 = Instance.new("UICorner")
+local CheckBox_3 = Instance.new("ImageButton")
+local UICorner_18 = Instance.new("UICorner")
+local CheckBox_4 = Instance.new("ImageButton")
+local UICorner_19 = Instance.new("UICorner")
+local Title_7 = Instance.new("TextLabel")
+local Title_8 = Instance.new("TextLabel")
+local Title_9 = Instance.new("TextLabel")
+local Title_10 = Instance.new("TextLabel")
+local Frame_5 = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local Title_11 = Instance.new("TextLabel")
+local Name_6 = Instance.new("TextLabel")
+local CheckBox_5 = Instance.new("ImageButton")
+local UICorner_21 = Instance.new("UICorner")
+local CheckBox_6 = Instance.new("ImageButton")
+local UICorner_22 = Instance.new("UICorner")
+local CheckBox_7 = Instance.new("ImageButton")
+local UICorner_23 = Instance.new("UICorner")
+local CheckBox_8 = Instance.new("ImageButton")
+local UICorner_24 = Instance.new("UICorner")
+local Title_12 = Instance.new("TextLabel")
+local Title_13 = Instance.new("TextLabel")
+local Title_14 = Instance.new("TextLabel")
+local Title_15 = Instance.new("TextLabel")
+local Name_7 = Instance.new("TextLabel")
+local Settingstab = Instance.new("Frame")
+local Frame_6 = Instance.new("Frame")
+local UICorner_25 = Instance.new("UICorner")
+local DestroyUI = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local Title_16 = Instance.new("TextLabel")
+local Oldui = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local Name_8 = Instance.new("TextLabel")
+local Creditstab = Instance.new("Frame")
+local Frame_7 = Instance.new("Frame")
+local UICorner_28 = Instance.new("UICorner")
+local Title_17 = Instance.new("TextLabel")
+local Title_18 = Instance.new("TextLabel")
+local Title_19 = Instance.new("TextLabel")
+local Title_20 = Instance.new("TextLabel")
+local Title_21 = Instance.new("TextLabel")
+local Title_22 = Instance.new("TextLabel")
+local Title_23 = Instance.new("TextLabel")
+local Dis = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local Misctab = Instance.new("Frame")
+local Frame_8 = Instance.new("Frame")
+local UICorner_30 = Instance.new("UICorner")
+local Title_24 = Instance.new("TextLabel")
+local Name_9 = Instance.new("TextLabel")
+local Name_10 = Instance.new("TextLabel")
+
+--Properties:
+
+Test4.Name = "Test#4"
+Test4.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Test4.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainGUI.Name = "MainGUI"
+MainGUI.Parent = Test4
+MainGUI.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+MainGUI.BorderSizePixel = 0
+MainGUI.Position = UDim2.new(0.374179423, 0, 0.122765198, 0)
+MainGUI.Size = UDim2.new(0, 830, 0, 557)
+MainGUI.Visible = false
+
+UICorner.CornerRadius = UDim.new(0, 10)
+UICorner.Parent = MainGUI
+
+Line.Name = "Line"
+Line.Parent = MainGUI
+Line.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Line.BorderColor3 = Color3.fromRGB(25, 25, 25)
+Line.Position = UDim2.new(0.00148587511, 0, 0.093023248, 0)
+Line.Size = UDim2.new(0, 828, 0, 0)
+
+Line2.Name = "Line2"
+Line2.Parent = MainGUI
+Line2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Line2.BorderColor3 = Color3.fromRGB(25, 25, 25)
+Line2.Position = UDim2.new(0, 0, 0.790697753, 0)
+Line2.Size = UDim2.new(0, 292, 0, 0)
+
+Line3.Name = "Line3"
+Line3.Parent = MainGUI
+Line3.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Line3.BorderColor3 = Color3.fromRGB(25, 25, 25)
+Line3.Position = UDim2.new(0.352088273, 0, 0.0930232778, 0)
+Line3.Size = UDim2.new(0, 0, 0, 505)
+
+Users.Name = "Users"
+Users.Parent = MainGUI
+Users.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Users.BackgroundTransparency = 1.000
+Users.BorderSizePixel = 0
+Users.Position = UDim2.new(0.0296371207, 0, 0.84517926, 0)
+Users.Size = UDim2.new(0, 47, 0, 45)
+Users.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+Username.Name = "Username"
+Username.Parent = Users
+Username.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Username.BackgroundTransparency = 1.000
+Username.Position = UDim2.new(1.27659571, 0, 0, 0)
+Username.Size = UDim2.new(0, 98, 0, 27)
+Username.Font = Enum.Font.SourceSans
+Username.Text = "Username"
+Username.TextColor3 = Color3.fromRGB(85, 255, 255)
+Username.TextSize = 15.000
+Username.TextXAlignment = Enum.TextXAlignment.Left
+
+FPS.Name = "FPS"
+FPS.Parent = Users
+FPS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FPS.BackgroundTransparency = 1.000
+FPS.Position = UDim2.new(1.27659571, 0, 0.400000006, 0)
+FPS.Size = UDim2.new(0, 29, 0, 27)
+FPS.Font = Enum.Font.SourceSans
+FPS.Text = "Fps :"
+FPS.TextColor3 = Color3.fromRGB(96, 96, 96)
+FPS.TextSize = 15.000
+FPS.TextXAlignment = Enum.TextXAlignment.Left
+
+Amonut.Name = "Amonut"
+Amonut.Parent = Users
+Amonut.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Amonut.BackgroundTransparency = 1.000
+Amonut.Position = UDim2.new(1.89361703, 0, 0.400000006, 0)
+Amonut.Size = UDim2.new(0, 99, 0, 27)
+Amonut.Font = Enum.Font.SourceSans
+Amonut.Text = "Amount"
+Amonut.TextColor3 = Color3.fromRGB(96, 96, 96)
+Amonut.TextSize = 15.000
+Amonut.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_2.Parent = Users
+
+FPS_2.Name = "FPS"
+FPS_2.Parent = Users
+FPS_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FPS_2.BackgroundTransparency = 1.000
+FPS_2.Position = UDim2.new(1.27659571, 0, 1, 0)
+FPS_2.Size = UDim2.new(0, 81, 0, 27)
+FPS_2.Font = Enum.Font.SourceSans
+FPS_2.Text = "Game/Server :"
+FPS_2.TextColor3 = Color3.fromRGB(96, 96, 96)
+FPS_2.TextSize = 15.000
+FPS_2.TextXAlignment = Enum.TextXAlignment.Left
+
+FPS_3.Name = "FPS"
+FPS_3.Parent = Users
+FPS_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FPS_3.BackgroundTransparency = 1.000
+FPS_3.Position = UDim2.new(3, 0, 1, 0)
+FPS_3.Size = UDim2.new(0, 106, 0, 27)
+FPS_3.Font = Enum.Font.SourceSans
+FPS_3.Text = "Shindo life - Lobby"
+FPS_3.TextColor3 = Color3.fromRGB(96, 96, 96)
+FPS_3.TextSize = 15.000
+FPS_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Name.Name = "Name"
+Name.Parent = MainGUI
+Name.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Name.BackgroundTransparency = 1.000
+Name.Position = UDim2.new(0.0239953864, 0, 0, 0)
+Name.Size = UDim2.new(0, 233, 0, 27)
+Name.Font = Enum.Font.PermanentMarker
+Name.Text = "Project Vellerius"
+Name.TextColor3 = Color3.fromRGB(85, 255, 255)
+Name.TextSize = 30.000
+Name.TextXAlignment = Enum.TextXAlignment.Left
+
+Autofarmtab.Name = "Autofarmtab"
+Autofarmtab.Parent = MainGUI
+Autofarmtab.Active = true
+Autofarmtab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Autofarmtab.BackgroundTransparency = 1.000
+Autofarmtab.Position = UDim2.new(0.352154613, 0, 0.0930232778, 0)
+Autofarmtab.Size = UDim2.new(0, 537, 0, 505)
+
+Frame.Parent = Autofarmtab
+Frame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame.Position = UDim2.new(0.0387022495, 0, 0.017055653, 0)
+Frame.Size = UDim2.new(0, 228, 0, 327)
+
+UICorner_3.CornerRadius = UDim.new(0, 10)
+UICorner_3.Parent = Frame
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.109929144, 0, 0.0238532238, 0)
+Title.Size = UDim2.new(0, 95, 0, 35)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Autofarms :"
+Title.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title.TextSize = 26.000
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+Frame_2.Parent = Autofarmtab
+Frame_2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame_2.Position = UDim2.new(0.502389371, 0, 0.0178751089, 0)
+Frame_2.Size = UDim2.new(0, 228, 0, 426)
+
+UICorner_4.CornerRadius = UDim.new(0, 10)
+UICorner_4.Parent = Frame_2
+
+Godmode.Name = "Godmode"
+Godmode.Parent = Frame_2
+Godmode.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+Godmode.Position = UDim2.new(0.111714602, 0, 0.86154294, 0)
+Godmode.Size = UDim2.new(0, 176, 0, 50)
+Godmode.Font = Enum.Font.SourceSans
+Godmode.Text = "God mode"
+Godmode.TextColor3 = Color3.fromRGB(96, 96, 96)
+Godmode.TextSize = 20.000
+
+UICorner_5.CornerRadius = UDim.new(0, 10)
+UICorner_5.Parent = Godmode
+
+Title_2.Name = "Title"
+Title_2.Parent = Frame_2
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(0.109929144, 0, 0.0150234848, 0)
+Title_2.Size = UDim2.new(0, 95, 0, 35)
+Title_2.Font = Enum.Font.SourceSans
+Title_2.Text = "Settings :"
+Title_2.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_2.TextSize = 26.000
+Title_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Name_2.Name = "Name"
+Name_2.Parent = Autofarmtab
+Name_2.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Name_2.BackgroundTransparency = 1.000
+Name_2.Position = UDim2.new(0.0519283116, 0, 0.351026535, 0)
+Name_2.Size = UDim2.new(0, 212, 0, 27)
+Name_2.Font = Enum.Font.PermanentMarker
+Name_2.Text = "More Coming soon!"
+Name_2.TextColor3 = Color3.fromRGB(85, 255, 255)
+Name_2.TextSize = 30.000
+Name_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Name_3.Name = "Name"
+Name_3.Parent = Autofarmtab
+Name_3.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Name_3.BackgroundTransparency = 1.000
+Name_3.Position = UDim2.new(0.29028964, 0, 0.946140051, 0)
+Name_3.Size = UDim2.new(0, 233, 0, 27)
+Name_3.Font = Enum.Font.PermanentMarker
+Name_3.Text = "What are u looking at?"
+Name_3.TextColor3 = Color3.fromRGB(85, 255, 255)
+Name_3.TextSize = 30.000
+Name_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Line4.Name = "Line4"
+Line4.Parent = MainGUI
+Line4.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Line4.BorderColor3 = Color3.fromRGB(25, 25, 25)
+Line4.Position = UDim2.new(0.00148587511, 0, 0.54521966, 0)
+Line4.Size = UDim2.new(0, 291, 0, 0)
+
+Autofarm.Name = "Autofarm"
+Autofarm.Parent = MainGUI
+Autofarm.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+Autofarm.Position = UDim2.new(0.02399542, 0, 0.127942488, 0)
+Autofarm.Size = UDim2.new(0, 252, 0, 50)
+Autofarm.Font = Enum.Font.SourceSans
+Autofarm.Text = "Autofarm"
+Autofarm.TextColor3 = Color3.fromRGB(96, 96, 96)
+Autofarm.TextSize = 20.000
+
+UICorner_6.CornerRadius = UDim.new(0, 10)
+UICorner_6.Parent = Autofarm
+
+Misc.Name = "Misc"
+Misc.Parent = MainGUI
+Misc.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+Misc.Position = UDim2.new(0.02399542, 0, 0.23037304, 0)
+Misc.Size = UDim2.new(0, 252, 0, 50)
+Misc.Font = Enum.Font.SourceSans
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.fromRGB(96, 96, 96)
+Misc.TextSize = 20.000
+
+UICorner_7.CornerRadius = UDim.new(0, 10)
+UICorner_7.Parent = Misc
+
+Player.Name = "Player"
+Player.Parent = MainGUI
+Player.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+Player.Position = UDim2.new(0.02399542, 0, 0.336275816, 0)
+Player.Size = UDim2.new(0, 252, 0, 50)
+Player.Font = Enum.Font.SourceSans
+Player.Text = "Player"
+Player.TextColor3 = Color3.fromRGB(96, 96, 96)
+Player.TextSize = 20.000
+
+UICorner_8.CornerRadius = UDim.new(0, 10)
+UICorner_8.Parent = Player
+
+Visuals.Name = "Visuals"
+Visuals.Parent = MainGUI
+Visuals.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+Visuals.Position = UDim2.new(0.02399542, 0, 0.440442502, 0)
+Visuals.Size = UDim2.new(0, 252, 0, 50)
+Visuals.Font = Enum.Font.SourceSans
+Visuals.Text = "Visuals"
+Visuals.TextColor3 = Color3.fromRGB(96, 96, 96)
+Visuals.TextSize = 20.000
+
+UICorner_9.CornerRadius = UDim.new(0, 10)
+UICorner_9.Parent = Visuals
+
+Settings.Name = "Settings"
+Settings.Parent = MainGUI
+Settings.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+Settings.Position = UDim2.new(0.02399542, 0, 0.567178607, 0)
+Settings.Size = UDim2.new(0, 252, 0, 50)
+Settings.Font = Enum.Font.SourceSans
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(96, 96, 96)
+Settings.TextSize = 20.000
+
+UICorner_10.CornerRadius = UDim.new(0, 10)
+UICorner_10.Parent = Settings
+
+Credits.Name = "Credits"
+Credits.Parent = MainGUI
+Credits.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+Credits.Position = UDim2.new(0.02399542, 0, 0.673081398, 0)
+Credits.Size = UDim2.new(0, 252, 0, 50)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(96, 96, 96)
+Credits.TextSize = 20.000
+
+UICorner_11.CornerRadius = UDim.new(0, 10)
+UICorner_11.Parent = Credits
+
+Playertab.Name = "Playertab"
+Playertab.Parent = MainGUI
+Playertab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Playertab.BackgroundTransparency = 1.000
+Playertab.Position = UDim2.new(0.351807237, 0, 0.0915619358, 0)
+Playertab.Size = UDim2.new(0, 537, 0, 505)
+Playertab.Visible = false
+
+Frame_3.Parent = Playertab
+Frame_3.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame_3.Position = UDim2.new(0.0387022011, 0, 0.0401266553, 0)
+Frame_3.Size = UDim2.new(0, 501, 0, 466)
+
+UICorner_12.CornerRadius = UDim.new(0, 10)
+UICorner_12.Parent = Frame_3
+
+Title_3.Name = "Title"
+Title_3.Parent = Frame_3
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.Position = UDim2.new(0.0340808854, 0, 0.0152695291, 0)
+Title_3.Size = UDim2.new(0, 196, 0, 35)
+Title_3.Font = Enum.Font.SourceSans
+Title_3.Text = "Local player settings :"
+Title_3.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_3.TextSize = 26.000
+Title_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Title_4.Name = "Title"
+Title_4.Parent = Frame_3
+Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.BackgroundTransparency = 1.000
+Title_4.Position = UDim2.new(0.0340808854, 0, 0.105398282, 0)
+Title_4.Size = UDim2.new(0, 196, 0, 35)
+Title_4.Font = Enum.Font.SourceSans
+Title_4.Text = "Walkspeed :"
+Title_4.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_4.TextSize = 26.000
+Title_4.TextXAlignment = Enum.TextXAlignment.Left
+
+TextBox.Parent = Frame_3
+TextBox.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+TextBox.Position = UDim2.new(0.271457076, 0, 0.122433051, 0)
+TextBox.Size = UDim2.new(0, 77, 0, 26)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderColor3 = Color3.fromRGB(96, 96, 96)
+TextBox.PlaceholderText = "16"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(96, 96, 96)
+TextBox.TextSize = 20.000
+
+UICorner_13.Parent = TextBox
+
+Title_5.Name = "Title"
+Title_5.Parent = Frame_3
+Title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.BackgroundTransparency = 1.000
+Title_5.Position = UDim2.new(0.0340808854, 0, 0.201964796, 0)
+Title_5.Size = UDim2.new(0, 196, 0, 35)
+Title_5.Font = Enum.Font.SourceSans
+Title_5.Text = "Jumppower :"
+Title_5.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_5.TextSize = 26.000
+Title_5.TextXAlignment = Enum.TextXAlignment.Left
+
+TextBox_2.Parent = Frame_3
+TextBox_2.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+TextBox_2.Position = UDim2.new(0.271457076, 0, 0.210415885, 0)
+TextBox_2.Size = UDim2.new(0, 77, 0, 26)
+TextBox_2.Font = Enum.Font.SourceSans
+TextBox_2.PlaceholderColor3 = Color3.fromRGB(96, 96, 96)
+TextBox_2.PlaceholderText = "50"
+TextBox_2.Text = ""
+TextBox_2.TextColor3 = Color3.fromRGB(96, 96, 96)
+TextBox_2.TextSize = 20.000
+
+UICorner_14.Parent = TextBox_2
+
+Name_4.Name = "Name"
+Name_4.Parent = Frame_3
+Name_4.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Name_4.BackgroundTransparency = 1.000
+Name_4.Position = UDim2.new(0.288382769, 0, 0.354188055, 0)
+Name_4.Size = UDim2.new(0, 212, 0, 27)
+Name_4.Font = Enum.Font.PermanentMarker
+Name_4.Text = "More Coming soon!"
+Name_4.TextColor3 = Color3.fromRGB(85, 255, 255)
+Name_4.TextSize = 30.000
+Name_4.TextXAlignment = Enum.TextXAlignment.Left
+
+Visualstab.Name = "Visualstab"
+Visualstab.Parent = MainGUI
+Visualstab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Visualstab.BackgroundTransparency = 1.000
+Visualstab.Position = UDim2.new(0.351807237, 0, 0.0915619358, 0)
+Visualstab.Size = UDim2.new(0, 537, 0, 505)
+Visualstab.Visible = false
+
+Frame_4.Parent = Visualstab
+Frame_4.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame_4.Position = UDim2.new(0.502389371, 0, 0.0178750828, 0)
+Frame_4.Size = UDim2.new(0, 228, 0, 410)
+
+UICorner_15.CornerRadius = UDim.new(0, 10)
+UICorner_15.Parent = Frame_4
+
+Title_6.Name = "Title"
+Title_6.Parent = Frame_4
+Title_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_6.BackgroundTransparency = 1.000
+Title_6.Position = UDim2.new(0.0792273805, 0, 0.0125844441, 0)
+Title_6.Size = UDim2.new(0, 103, 0, 35)
+Title_6.Font = Enum.Font.SourceSans
+Title_6.Text = "NPCs ESP :"
+Title_6.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_6.TextSize = 26.000
+Title_6.TextXAlignment = Enum.TextXAlignment.Left
+
+Name_5.Name = "Name"
+Name_5.Parent = Frame_4
+Name_5.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Name_5.BackgroundTransparency = 1.000
+Name_5.Position = UDim2.new(0.384012341, 0, 0.099831149, 0)
+Name_5.Size = UDim2.new(0, 52, 0, 27)
+Name_5.Font = Enum.Font.PermanentMarker
+Name_5.Text = "WIP"
+Name_5.TextColor3 = Color3.fromRGB(85, 255, 255)
+Name_5.TextSize = 30.000
+Name_5.TextXAlignment = Enum.TextXAlignment.Left
+
+CheckBox.Name = "CheckBox"
+CheckBox.Parent = Frame_4
+CheckBox.BackgroundTransparency = 1.000
+CheckBox.Position = UDim2.new(0.655372977, 0, 0.190211788, 0)
+CheckBox.Size = UDim2.new(0, 30, 0, 30)
+CheckBox.Image = "http://www.roblox.com/asset/?id=65492651"
+
+UICorner_16.CornerRadius = UDim.new(0, 10)
+UICorner_16.Parent = CheckBox
+
+CheckBox_2.Name = "CheckBox"
+CheckBox_2.Parent = Frame_4
+CheckBox_2.BackgroundTransparency = 1.000
+CheckBox_2.Position = UDim2.new(0.655372977, 0, 0.312162995, 0)
+CheckBox_2.Size = UDim2.new(0, 30, 0, 30)
+CheckBox_2.Image = "http://www.roblox.com/asset/?id=65492651"
+
+UICorner_17.CornerRadius = UDim.new(0, 10)
+UICorner_17.Parent = CheckBox_2
+
+CheckBox_3.Name = "CheckBox"
+CheckBox_3.Parent = Frame_4
+CheckBox_3.BackgroundTransparency = 1.000
+CheckBox_3.Position = UDim2.new(0.655372977, 0, 0.431675196, 0)
+CheckBox_3.Size = UDim2.new(0, 30, 0, 30)
+CheckBox_3.Image = "http://www.roblox.com/asset/?id=65492651"
+
+UICorner_18.CornerRadius = UDim.new(0, 10)
+UICorner_18.Parent = CheckBox_3
+
+CheckBox_4.Name = "CheckBox"
+CheckBox_4.Parent = Frame_4
+CheckBox_4.BackgroundTransparency = 1.000
+CheckBox_4.Position = UDim2.new(0.655372977, 0, 0.548748374, 0)
+CheckBox_4.Size = UDim2.new(0, 30, 0, 30)
+CheckBox_4.Image = "http://www.roblox.com/asset/?id=65492651"
+
+UICorner_19.CornerRadius = UDim.new(0, 10)
+UICorner_19.Parent = CheckBox_4
+
+Title_7.Name = "Title"
+Title_7.Parent = Frame_4
+Title_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_7.BackgroundTransparency = 1.000
+Title_7.Position = UDim2.new(0.158174753, 0, 0.183316156, 0)
+Title_7.Size = UDim2.new(0, 103, 0, 35)
+Title_7.Font = Enum.Font.SourceSans
+Title_7.Text = "Enemy ESP"
+Title_7.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_7.TextSize = 26.000
+Title_7.TextXAlignment = Enum.TextXAlignment.Left
+
+Title_8.Name = "Title"
+Title_8.Parent = Frame_4
+Title_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_8.BackgroundTransparency = 1.000
+Title_8.Position = UDim2.new(0.109929144, 0, 0.546730757, 0)
+Title_8.Size = UDim2.new(0, 103, 0, 35)
+Title_8.Font = Enum.Font.SourceSans
+Title_8.Text = "Susanoo ESP"
+Title_8.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_8.TextSize = 26.000
+Title_8.TextXAlignment = Enum.TextXAlignment.Left
+
+Title_9.Name = "Title"
+Title_9.Parent = Frame_4
+Title_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_9.BackgroundTransparency = 1.000
+Title_9.Position = UDim2.new(0.158174753, 0, 0.429657638, 0)
+Title_9.Size = UDim2.new(0, 103, 0, 35)
+Title_9.Font = Enum.Font.SourceSans
+Title_9.Text = "Bosses ESP"
+Title_9.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_9.TextSize = 26.000
+Title_9.TextXAlignment = Enum.TextXAlignment.Left
+
+Title_10.Name = "Title"
+Title_10.Parent = Frame_4
+Title_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_10.BackgroundTransparency = 1.000
+Title_10.Position = UDim2.new(0.158174753, 0, 0.310145438, 0)
+Title_10.Size = UDim2.new(0, 103, 0, 35)
+Title_10.Font = Enum.Font.SourceSans
+Title_10.Text = "Scroll ESP"
+Title_10.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_10.TextSize = 26.000
+Title_10.TextXAlignment = Enum.TextXAlignment.Left
+
+Frame_5.Parent = Visualstab
+Frame_5.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame_5.Position = UDim2.new(0.0387022011, 0, 0.01705564, 0)
+Frame_5.Size = UDim2.new(0, 228, 0, 410)
+
+UICorner_20.CornerRadius = UDim.new(0, 10)
+UICorner_20.Parent = Frame_5
+
+Title_11.Name = "Title"
+Title_11.Parent = Frame_5
+Title_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_11.BackgroundTransparency = 1.000
+Title_11.Position = UDim2.new(0.0441396609, 0, 0.0140971113, 0)
+Title_11.Size = UDim2.new(0, 119, 0, 35)
+Title_11.Font = Enum.Font.SourceSans
+Title_11.Text = "Players ESP :"
+Title_11.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_11.TextSize = 26.000
+Title_11.TextXAlignment = Enum.TextXAlignment.Left
+
+Name_6.Name = "Name"
+Name_6.Parent = Frame_5
+Name_6.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Name_6.BackgroundTransparency = 1.000
+Name_6.Position = UDim2.new(0.384012341, 0, 0.099831149, 0)
+Name_6.Size = UDim2.new(0, 52, 0, 27)
+Name_6.Font = Enum.Font.PermanentMarker
+Name_6.Text = "WIP"
+Name_6.TextColor3 = Color3.fromRGB(85, 255, 255)
+Name_6.TextSize = 30.000
+Name_6.TextXAlignment = Enum.TextXAlignment.Left
+
+CheckBox_5.Name = "CheckBox"
+CheckBox_5.Parent = Frame_5
+CheckBox_5.BackgroundTransparency = 1.000
+CheckBox_5.Position = UDim2.new(0.655372977, 0, 0.190211788, 0)
+CheckBox_5.Size = UDim2.new(0, 30, 0, 30)
+CheckBox_5.Image = "http://www.roblox.com/asset/?id=65492651"
+
+UICorner_21.CornerRadius = UDim.new(0, 10)
+UICorner_21.Parent = CheckBox_5
+
+CheckBox_6.Name = "CheckBox"
+CheckBox_6.Parent = Frame_5
+CheckBox_6.BackgroundTransparency = 1.000
+CheckBox_6.Position = UDim2.new(0.655372977, 0, 0.551187396, 0)
+CheckBox_6.Size = UDim2.new(0, 30, 0, 30)
+CheckBox_6.Image = "http://www.roblox.com/asset/?id=65492651"
+
+UICorner_22.CornerRadius = UDim.new(0, 10)
+UICorner_22.Parent = CheckBox_6
+
+CheckBox_7.Name = "CheckBox"
+CheckBox_7.Parent = Frame_5
+CheckBox_7.BackgroundTransparency = 1.000
+CheckBox_7.Position = UDim2.new(0.655372977, 0, 0.431675196, 0)
+CheckBox_7.Size = UDim2.new(0, 30, 0, 30)
+CheckBox_7.Image = "http://www.roblox.com/asset/?id=65492651"
+
+UICorner_23.CornerRadius = UDim.new(0, 10)
+UICorner_23.Parent = CheckBox_7
+
+CheckBox_8.Name = "CheckBox"
+CheckBox_8.Parent = Frame_5
+CheckBox_8.BackgroundTransparency = 1.000
+CheckBox_8.Position = UDim2.new(0.655372977, 0, 0.309723973, 0)
+CheckBox_8.Size = UDim2.new(0, 30, 0, 30)
+CheckBox_8.Image = "http://www.roblox.com/asset/?id=65492651"
+
+UICorner_24.CornerRadius = UDim.new(0, 10)
+UICorner_24.Parent = CheckBox_8
+
+Title_12.Name = "Title"
+Title_12.Parent = Frame_5
+Title_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_12.BackgroundTransparency = 1.000
+Title_12.Position = UDim2.new(0.13185896, 0, 0.189706862, 0)
+Title_12.Size = UDim2.new(0, 119, 0, 35)
+Title_12.Font = Enum.Font.SourceSans
+Title_12.Text = "Enabled"
+Title_12.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_12.TextSize = 26.000
+Title_12.TextXAlignment = Enum.TextXAlignment.Left
+
+Title_13.Name = "Title"
+Title_13.Parent = Frame_5
+Title_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_13.BackgroundTransparency = 1.000
+Title_13.Position = UDim2.new(0.13185896, 0, 0.309219062, 0)
+Title_13.Size = UDim2.new(0, 75, 0, 35)
+Title_13.Font = Enum.Font.SourceSans
+Title_13.Text = "Charms"
+Title_13.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_13.TextSize = 26.000
+Title_13.TextXAlignment = Enum.TextXAlignment.Left
+
+Title_14.Name = "Title"
+Title_14.Parent = Frame_5
+Title_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_14.BackgroundTransparency = 1.000
+Title_14.Position = UDim2.new(0.0879993141, 0, 0.431170285, 0)
+Title_14.Size = UDim2.new(0, 119, 0, 35)
+Title_14.Font = Enum.Font.SourceSans
+Title_14.Text = "Health ESP"
+Title_14.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_14.TextSize = 26.000
+Title_14.TextXAlignment = Enum.TextXAlignment.Left
+
+Title_15.Name = "Title"
+Title_15.Parent = Frame_5
+Title_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_15.BackgroundTransparency = 1.000
+Title_15.Position = UDim2.new(0.166946679, 0, 0.553121507, 0)
+Title_15.Size = UDim2.new(0, 67, 0, 35)
+Title_15.Font = Enum.Font.SourceSans
+Title_15.Text = "Tracers"
+Title_15.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_15.TextSize = 26.000
+Title_15.TextXAlignment = Enum.TextXAlignment.Left
+
+Name_7.Name = "Name"
+Name_7.Parent = Visualstab
+Name_7.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Name_7.BackgroundTransparency = 1.000
+Name_7.Position = UDim2.new(0.318222553, 0, 0.919343352, 0)
+Name_7.Size = UDim2.new(0, 212, 0, 27)
+Name_7.Font = Enum.Font.PermanentMarker
+Name_7.Text = "More Coming soon!"
+Name_7.TextColor3 = Color3.fromRGB(85, 255, 255)
+Name_7.TextSize = 30.000
+Name_7.TextXAlignment = Enum.TextXAlignment.Left
+
+Settingstab.Name = "Settingstab"
+Settingstab.Parent = MainGUI
+Settingstab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settingstab.BackgroundTransparency = 1.000
+Settingstab.Position = UDim2.new(0.351807237, 0, 0.0915619358, 0)
+Settingstab.Size = UDim2.new(0, 537, 0, 505)
+Settingstab.Visible = false
+
+Frame_6.Parent = Settingstab
+Frame_6.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame_6.Position = UDim2.new(0.0349778049, 0, 0.0401266553, 0)
+Frame_6.Size = UDim2.new(0, 503, 0, 443)
+
+UICorner_25.CornerRadius = UDim.new(0, 10)
+UICorner_25.Parent = Frame_6
+
+DestroyUI.Name = "DestroyUI"
+DestroyUI.Parent = Frame_6
+DestroyUI.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+DestroyUI.Position = UDim2.new(0.0162871666, 0, 0.847998917, 0)
+DestroyUI.Size = UDim2.new(0, 176, 0, 50)
+DestroyUI.Font = Enum.Font.SourceSans
+DestroyUI.Text = "Destroy UI"
+DestroyUI.TextColor3 = Color3.fromRGB(96, 96, 96)
+DestroyUI.TextSize = 20.000
+
+UICorner_26.CornerRadius = UDim.new(0, 10)
+UICorner_26.Parent = DestroyUI
+
+Title_16.Name = "Title"
+Title_16.Parent = Frame_6
+Title_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_16.BackgroundTransparency = 1.000
+Title_16.Position = UDim2.new(0.0164897814, 0, -0.000777870417, 0)
+Title_16.Size = UDim2.new(0, 95, 0, 35)
+Title_16.Font = Enum.Font.SourceSans
+Title_16.Text = "Settings :"
+Title_16.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_16.TextSize = 26.000
+Title_16.TextXAlignment = Enum.TextXAlignment.Left
+
+Oldui.Name = "Oldui"
+Oldui.Parent = Frame_6
+Oldui.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+Oldui.Position = UDim2.new(0.63258934, 0, 0.847998917, 0)
+Oldui.Size = UDim2.new(0, 176, 0, 50)
+Oldui.Font = Enum.Font.SourceSans
+Oldui.Text = "Old UI"
+Oldui.TextColor3 = Color3.fromRGB(96, 96, 96)
+Oldui.TextSize = 20.000
+
+UICorner_27.CornerRadius = UDim.new(0, 10)
+UICorner_27.Parent = Oldui
+
+Name_8.Name = "Name"
+Name_8.Parent = Settingstab
+Name_8.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Name_8.BackgroundTransparency = 1.000
+Name_8.Position = UDim2.new(0.290289581, 0, 0.430234522, 0)
+Name_8.Size = UDim2.new(0, 240, 0, 27)
+Name_8.Font = Enum.Font.PermanentMarker
+Name_8.Text = "Settings coming soon!"
+Name_8.TextColor3 = Color3.fromRGB(85, 255, 255)
+Name_8.TextSize = 30.000
+Name_8.TextXAlignment = Enum.TextXAlignment.Left
+
+Creditstab.Name = "Creditstab"
+Creditstab.Parent = MainGUI
+Creditstab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Creditstab.BackgroundTransparency = 1.000
+Creditstab.Position = UDim2.new(0.351807237, 0, 0.0915619358, 0)
+Creditstab.Size = UDim2.new(0, 537, 0, 505)
+Creditstab.Visible = false
+
+Frame_7.Parent = Creditstab
+Frame_7.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame_7.Position = UDim2.new(0.0387022011, 0, 0.01705564, 0)
+Frame_7.Size = UDim2.new(0, 499, 0, 456)
+
+UICorner_28.CornerRadius = UDim.new(0, 10)
+UICorner_28.Parent = Frame_7
+
+Title_17.Name = "Title"
+Title_17.Parent = Frame_7
+Title_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_17.BackgroundTransparency = 1.000
+Title_17.Position = UDim2.new(0.0297688246, 0, -0.000269582495, 0)
+Title_17.Size = UDim2.new(0, 95, 0, 35)
+Title_17.Font = Enum.Font.SourceSans
+Title_17.Text = "Credits :"
+Title_17.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_17.TextSize = 26.000
+Title_17.TextXAlignment = Enum.TextXAlignment.Left
+
+Title_18.Name = "Title"
+Title_18.Parent = Frame_7
+Title_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_18.BackgroundTransparency = 1.000
+Title_18.Position = UDim2.new(0.109929085, 0, 0.0940286741, 0)
+Title_18.Size = UDim2.new(0, 245, 0, 35)
+Title_18.Font = Enum.Font.SourceSans
+Title_18.Text = "Corrupt    OWNER/Scripter"
+Title_18.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_18.TextSize = 26.000
+Title_18.TextXAlignment = Enum.TextXAlignment.Left
+
+Title_19.Name = "Title"
+Title_19.Parent = Frame_7
+Title_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_19.BackgroundTransparency = 1.000
+Title_19.Position = UDim2.new(0.109929085, 0, 0.181747973, 0)
+Title_19.Size = UDim2.new(0, 245, 0, 35)
+Title_19.Font = Enum.Font.SourceSans
+Title_19.Text = "Spectrum    Founder/Teacher/Dev"
+Title_19.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_19.TextSize = 26.000
+Title_19.TextXAlignment = Enum.TextXAlignment.Left
+
+Title_20.Name = "Title"
+Title_20.Parent = Frame_7
+Title_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_20.BackgroundTransparency = 1.000
+Title_20.Position = UDim2.new(0.410530299, 0, 0.883502305, 0)
+Title_20.Size = UDim2.new(0, 245, 0, 35)
+Title_20.Font = Enum.Font.SourceSans
+Title_20.Text = "(Most of the roles are placeholders)"
+Title_20.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_20.TextSize = 26.000
+Title_20.TextXAlignment = Enum.TextXAlignment.Left
+
+Title_21.Name = "Title"
+Title_21.Parent = Frame_7
+Title_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_21.BackgroundTransparency = 1.000
+Title_21.Position = UDim2.new(0.109929085, 0, 0.258502364, 0)
+Title_21.Size = UDim2.new(0, 245, 0, 35)
+Title_21.Font = Enum.Font.SourceSans
+Title_21.Text = "Leadmaker   Developer"
+Title_21.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_21.TextSize = 26.000
+Title_21.TextXAlignment = Enum.TextXAlignment.Left
+
+Title_22.Name = "Title"
+Title_22.Parent = Frame_7
+Title_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_22.BackgroundTransparency = 1.000
+Title_22.Position = UDim2.new(0.109929085, 0, 0.344028682, 0)
+Title_22.Size = UDim2.new(0, 245, 0, 35)
+Title_22.Font = Enum.Font.SourceSans
+Title_22.Text = "Aidanman14  UI Creator"
+Title_22.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_22.TextSize = 26.000
+Title_22.TextXAlignment = Enum.TextXAlignment.Left
+
+Title_23.Name = "Title"
+Title_23.Parent = Frame_7
+Title_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_23.BackgroundTransparency = 1.000
+Title_23.Position = UDim2.new(0.109929085, 0, 0.670783043, 0)
+Title_23.Size = UDim2.new(0, 327, 0, 35)
+Title_23.Font = Enum.Font.SourceSans
+Title_23.Text = "Thank you for using Project Vellerius!"
+Title_23.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_23.TextSize = 26.000
+Title_23.TextXAlignment = Enum.TextXAlignment.Left
+
+Dis.Name = "Dis"
+Dis.Parent = Frame_7
+Dis.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+Dis.Position = UDim2.new(0.0295502692, 0, 0.85057801, 0)
+Dis.Size = UDim2.new(0, 176, 0, 50)
+Dis.Font = Enum.Font.SourceSans
+Dis.Text = "Discord server"
+Dis.TextColor3 = Color3.fromRGB(96, 96, 96)
+Dis.TextSize = 20.000
+
+UICorner_29.CornerRadius = UDim.new(0, 10)
+UICorner_29.Parent = Dis
+
+Misctab.Name = "Misctab"
+Misctab.Parent = MainGUI
+Misctab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Misctab.BackgroundTransparency = 1.000
+Misctab.Position = UDim2.new(0.351807237, 0, 0.0915619358, 0)
+Misctab.Size = UDim2.new(0, 537, 0, 505)
+Misctab.Visible = false
+
+Frame_8.Parent = Misctab
+Frame_8.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame_8.Position = UDim2.new(0.0387022011, 0, 0.0401266553, 0)
+Frame_8.Size = UDim2.new(0, 495, 0, 426)
+
+UICorner_30.CornerRadius = UDim.new(0, 10)
+UICorner_30.Parent = Frame_8
+
+Title_24.Name = "Title"
+Title_24.Parent = Frame_8
+Title_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_24.BackgroundTransparency = 1.000
+Title_24.Position = UDim2.new(0.0473028794, 0, 0.0168109704, 0)
+Title_24.Size = UDim2.new(0, 95, 0, 35)
+Title_24.Font = Enum.Font.SourceSans
+Title_24.Text = "Misc :"
+Title_24.TextColor3 = Color3.fromRGB(96, 96, 96)
+Title_24.TextSize = 26.000
+Title_24.TextXAlignment = Enum.TextXAlignment.Left
+
+Name_9.Name = "Name"
+Name_9.Parent = Misctab
+Name_9.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Name_9.BackgroundTransparency = 1.000
+Name_9.Position = UDim2.new(0.357328683, 0, 0.446076035, 0)
+Name_9.Size = UDim2.new(0, 212, 0, 27)
+Name_9.Font = Enum.Font.PermanentMarker
+Name_9.Text = " Coming soon!"
+Name_9.TextColor3 = Color3.fromRGB(85, 255, 255)
+Name_9.TextSize = 30.000
+Name_9.TextXAlignment = Enum.TextXAlignment.Left
+
+Name_10.Name = "Name"
+Name_10.Parent = MainGUI
+Name_10.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Name_10.BackgroundTransparency = 1.000
+Name_10.Position = UDim2.new(0.0637544543, 0, 0.0323159769, 0)
+Name_10.Size = UDim2.new(0, 129, 0, 27)
+Name_10.Font = Enum.Font.PermanentMarker
+Name_10.Text = "Shindo life"
+Name_10.TextColor3 = Color3.fromRGB(85, 255, 255)
+Name_10.TextSize = 30.000
+Name_10.TextXAlignment = Enum.TextXAlignment.Left
+
+-- Scripts:
+
+local function ELUKX_fake_script() -- Username.LocalScript 
+	local script = Instance.new('LocalScript', Username)
+
+	local player = game.Players.LocalPlayer
+	
+	if player then
+		script.Parent.Text = ""..player.Name..""
+	end
+end
+coroutine.wrap(ELUKX_fake_script)()
+local function LMQHUWN_fake_script() -- Amonut.LocalScript 
+	local script = Instance.new('LocalScript', Amonut)
+
+	local RS = game:GetService("RunService")
+	local frames = 0
+	
+	RS.RenderStepped:Connect(function()
+		frames = frames + 1
+	end)
+	
+	while wait(1) do
+		script.Parent.Text = frames
+		frames = 0
+	end
+end
+coroutine.wrap(LMQHUWN_fake_script)()
+local function CIJCSNN_fake_script() -- Users.LocalScript 
+	local script = Instance.new('LocalScript', Users)
+
+	
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	local imageLabel = script.Parent
+	imageLabel.Image = content
+	
+end
+coroutine.wrap(CIJCSNN_fake_script)()
+local function CUZY_fake_script() -- Autofarm.LocalScript 
+	local script = Instance.new('LocalScript', Autofarm)
+
+	local aaa = script.Parent.Parent.Autofarmtab
+	local bbb = script.Parent.Parent.Misctab
+	local ccc = script.Parent.Parent.Playertab
+	local ddd = script.Parent.Parent.Visualstab
+	local eee = script.Parent.Parent.Settingstab
+	local fff = script.Parent.Parent.Creditstab
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		aaa.Visible = true
+		bbb.Visible = false
+		ccc.Visible = false
+		ddd.Visible = false
+		eee.Visible = false
+		fff.Visible = false
+	end)
+end
+coroutine.wrap(CUZY_fake_script)()
+local function AOOGODM_fake_script() -- Misc.LocalScript 
+	local script = Instance.new('LocalScript', Misc)
+
+	local aaa = script.Parent.Parent.Autofarmtab
+	local bbb = script.Parent.Parent.Misctab
+	local ccc = script.Parent.Parent.Playertab
+	local ddd = script.Parent.Parent.Visualstab
+	local eee = script.Parent.Parent.Settingstab
+	local fff = script.Parent.Parent.Creditstab
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		aaa.Visible = false
+		bbb.Visible = true
+		ccc.Visible = false
+		ddd.Visible = false
+		eee.Visible = false
+		fff.Visible = false
+	end)
+end
+coroutine.wrap(AOOGODM_fake_script)()
+local function XEZPPNB_fake_script() -- Player.LocalScript 
+	local script = Instance.new('LocalScript', Player)
+
+	local aaa = script.Parent.Parent.Autofarmtab
+	local bbb = script.Parent.Parent.Misctab
+	local ccc = script.Parent.Parent.Playertab
+	local ddd = script.Parent.Parent.Visualstab
+	local eee = script.Parent.Parent.Settingstab
+	local fff = script.Parent.Parent.Creditstab
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		aaa.Visible = false
+		bbb.Visible = false
+		ccc.Visible = true
+		ddd.Visible = false
+		eee.Visible = false
+		fff.Visible = false
+	end)
+end
+coroutine.wrap(XEZPPNB_fake_script)()
+local function CAHL_fake_script() -- Visuals.LocalScript 
+	local script = Instance.new('LocalScript', Visuals)
+
+	local aaa = script.Parent.Parent.Autofarmtab
+	local bbb = script.Parent.Parent.Misctab
+	local ccc = script.Parent.Parent.Playertab
+	local ddd = script.Parent.Parent.Visualstab
+	local eee = script.Parent.Parent.Settingstab
+	local fff = script.Parent.Parent.Creditstab
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		aaa.Visible = false
+		bbb.Visible = false
+		ccc.Visible = false
+		ddd.Visible = true
+		eee.Visible = false
+		fff.Visible = false
+	end)
+end
+coroutine.wrap(CAHL_fake_script)()
+local function WHUVJTZ_fake_script() -- Settings.LocalScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	local aaa = script.Parent.Parent.Autofarmtab
+	local bbb = script.Parent.Parent.Misctab
+	local ccc = script.Parent.Parent.Playertab
+	local ddd = script.Parent.Parent.Visualstab
+	local eee = script.Parent.Parent.Settingstab
+	local fff = script.Parent.Parent.Creditstab
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		aaa.Visible = false
+		bbb.Visible = false
+		ccc.Visible = false
+		ddd.Visible = false
+		eee.Visible = true
+		fff.Visible = false
+	end)
+end
+coroutine.wrap(WHUVJTZ_fake_script)()
+local function FRNACMV_fake_script() -- Credits.LocalScript 
+	local script = Instance.new('LocalScript', Credits)
+
+	local aaa = script.Parent.Parent.Autofarmtab
+	local bbb = script.Parent.Parent.Misctab
+	local ccc = script.Parent.Parent.Playertab
+	local ddd = script.Parent.Parent.Visualstab
+	local eee = script.Parent.Parent.Settingstab
+	local fff = script.Parent.Parent.Creditstab
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		aaa.Visible = false
+		bbb.Visible = false
+		ccc.Visible = false
+		ddd.Visible = false
+		eee.Visible = false
+		fff.Visible = true
+	end)
+end
+coroutine.wrap(FRNACMV_fake_script)()
+local function WSKR_fake_script() -- CheckBox.Check 
+	local script = Instance.new('Script', CheckBox)
+
+	checked = "http://www.roblox.com/asset/?id=10271792652"
+	unchecked = "http://www.roblox.com/asset/?id=65492651"
+	checkValue = script.Parent["Checked"]
+	
+	script.Parent.MouseButton1Down:connect(function()
+	if checkValue.Value then
+	checkValue.Value = false
+	script.Parent.Image = unchecked
+	else
+	checkValue.Value = true
+	script.Parent.Image = checked
+	end
+	end)
+end
+coroutine.wrap(WSKR_fake_script)()
+local function EZGE_fake_script() -- CheckBox_2.Check 
+	local script = Instance.new('Script', CheckBox_2)
+
+	checked = "http://www.roblox.com/asset/?id=10271792652"
+	unchecked = "http://www.roblox.com/asset/?id=65492651"
+	checkValue = script.Parent["Checked"]
+	
+	script.Parent.MouseButton1Down:connect(function()
+	if checkValue.Value then
+	checkValue.Value = false
+	script.Parent.Image = unchecked
+	else
+	checkValue.Value = true
+	script.Parent.Image = checked
+	end
+	end)
+end
+coroutine.wrap(EZGE_fake_script)()
+local function UUNDR_fake_script() -- CheckBox_3.Check 
+	local script = Instance.new('Script', CheckBox_3)
+
+	checked = "http://www.roblox.com/asset/?id=10271792652"
+	unchecked = "http://www.roblox.com/asset/?id=65492651"
+	checkValue = script.Parent["Checked"]
+	
+	script.Parent.MouseButton1Down:connect(function()
+	if checkValue.Value then
+	checkValue.Value = false
+	script.Parent.Image = unchecked
+	else
+	checkValue.Value = true
+	script.Parent.Image = checked
+	end
+	end)
+end
+coroutine.wrap(UUNDR_fake_script)()
+local function MTEEUYU_fake_script() -- CheckBox_4.Check 
+	local script = Instance.new('Script', CheckBox_4)
+
+	checked = "http://www.roblox.com/asset/?id=10271792652"
+	unchecked = "http://www.roblox.com/asset/?id=65492651"
+	checkValue = script.Parent["Checked"]
+	
+	script.Parent.MouseButton1Down:connect(function()
+	if checkValue.Value then
+	checkValue.Value = false
+	script.Parent.Image = unchecked
+	else
+	checkValue.Value = true
+	script.Parent.Image = checked
+	end
+	end)
+end
+coroutine.wrap(MTEEUYU_fake_script)()
+local function JGBMC_fake_script() -- CheckBox_5.Check 
+	local script = Instance.new('Script', CheckBox_5)
+
+	checked = "http://www.roblox.com/asset/?id=10271792652"
+	unchecked = "http://www.roblox.com/asset/?id=65492651"
+	checkValue = script.Parent["Checked"]
+	
+	script.Parent.MouseButton1Down:connect(function()
+	if checkValue.Value then
+	checkValue.Value = false
+	script.Parent.Image = unchecked
+	else
+	checkValue.Value = true
+	script.Parent.Image = checked
+	end
+	end)
+end
+coroutine.wrap(JGBMC_fake_script)()
+local function PSDIQM_fake_script() -- CheckBox_6.Check 
+	local script = Instance.new('Script', CheckBox_6)
+
+	checked = "http://www.roblox.com/asset/?id=10271792652"
+	unchecked = "http://www.roblox.com/asset/?id=65492651"
+	checkValue = script.Parent["Checked"]
+	
+	script.Parent.MouseButton1Down:connect(function()
+	if checkValue.Value then
+	checkValue.Value = false
+	script.Parent.Image = unchecked
+	else
+	checkValue.Value = true
+	script.Parent.Image = checked
+	end
+	end)
+end
+coroutine.wrap(PSDIQM_fake_script)()
+local function KHLZEZ_fake_script() -- CheckBox_7.Check 
+	local script = Instance.new('Script', CheckBox_7)
+
+	checked = "http://www.roblox.com/asset/?id=10271792652"
+	unchecked = "http://www.roblox.com/asset/?id=65492651"
+	checkValue = script.Parent["Checked"]
+	
+	script.Parent.MouseButton1Down:connect(function()
+	if checkValue.Value then
+	checkValue.Value = false
+	script.Parent.Image = unchecked
+	else
+	checkValue.Value = true
+	script.Parent.Image = checked
+	end
+	end)
+end
+coroutine.wrap(KHLZEZ_fake_script)()
+local function NVAT_fake_script() -- CheckBox_8.Check 
+	local script = Instance.new('Script', CheckBox_8)
+
+	checked = "http://www.roblox.com/asset/?id=10271792652"
+	unchecked = "http://www.roblox.com/asset/?id=65492651"
+	checkValue = script.Parent["Checked"]
+	
+	script.Parent.MouseButton1Down:connect(function()
+	if checkValue.Value then
+	checkValue.Value = false
+	script.Parent.Image = unchecked
+	else
+	checkValue.Value = true
+	script.Parent.Image = checked
+	end
+	end)
+end
+coroutine.wrap(NVAT_fake_script)()
+local function EHKAF_fake_script() -- DestroyUI.LocalScript 
+	local script = Instance.new('LocalScript', DestroyUI)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(EHKAF_fake_script)()
+local function HYNSQBI_fake_script() -- Dis.LocalScript 
+	local script = Instance.new('LocalScript', Dis)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Discord.Visible = true
+	end)
+	
+	
+end
+coroutine.wrap(HYNSQBI_fake_script)()
+local function URVEU_fake_script() -- MainGUI.Dragify 
+	local script = Instance.new('LocalScript', MainGUI)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(URVEU_fake_script)()
